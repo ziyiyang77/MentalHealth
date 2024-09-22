@@ -64,7 +64,7 @@ public class BabyMonsterAI : MonoBehaviour
     {
         if (!m_isActivated)
         {
-            if (Vector2.Distance(m_player.transform.position, transform.position) < m_detectRange)
+            if (Vector2.Distance(m_player.transform.position, transform.position) <= m_detectRange)
             {
                 m_isActivated = true;
                 m_state = MotionState.Attack;
