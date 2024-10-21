@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Enemy_Demo.unity
+    guid: d8b425909132afe4999fba53c26d157e
+  - enabled: 1
+    path: Assets/Scenes/MechanicsDemo.unity
+    guid: 66397b5f694e27d428eca138fea1eac3
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 15a5e239ffe460e488e4d0fd7852bfe6
   m_configObjects: {}

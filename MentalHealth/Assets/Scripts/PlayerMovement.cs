@@ -19,9 +19,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isOnReef = false;
     private float idleTimer = 0f;
 
+    public BirdSaving birdSaving;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        birdSaving = FindObjectOfType<BirdSaving>();
     }
 
     void Update()
@@ -168,7 +171,18 @@ public class PlayerMovement : MonoBehaviour
     void Die()
     {
         Debug.Log("Player die.");
-        Destroy(gameObject);
+        Vector2 deathPosition = transform.position; // Save the death position
+
+        // Check if the bird can save the player
+        if (birdSaving != null && !birdSaving.hasSavedPlayer)
+        {
+            birdSaving.PlayerDied(deathPosition);
+        }
+        else
+        {
+            // If the bird cannot save the player, destroy the player object
+            Destroy(gameObject);
+        }
     }
 
     // Detect collision with reef
