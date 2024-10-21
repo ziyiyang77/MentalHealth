@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 15a5e239ffe460e488e4d0fd7852bfe6
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: d29afc7ff4eb11641aa13d462a00b7fd
+  - enabled: 1
+    path: Assets/Scenes/LargeEnemyDemo.unity
+    guid: 586207c81dd08dd4eb188fd7dd39099e
   m_configObjects: {}
